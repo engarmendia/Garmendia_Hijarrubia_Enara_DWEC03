@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/ahorcado_logo.png" type="image/png" />
+    <title>El ahorcado</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc="
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    <main class="main-container">
+        <h1>JUEGO DEL AHORCADO</h1>
+        <button onclick="generaPalabra()" id="btn-empezar" type="button">EMPEZAR</button><br/>
+        <span id="hueco-cat"></span><br/>
+        <div class="cont-input-letras">
+            
+            <!--al input le ponemos 1 de maxlength, para que el usuario sólo pueda introducir una letra-->
+            <input id="letraInput" type="text" placeholder="Dame una letra" maxlength="1" name="letraInput" required />
+            <button onclick="comprobarLetraUsuario()" id="btn-comprobar" type="button">Comprobar</button>
+        </div>
+        <div id="cont-img">
+            <img src="img/ahorcado_6.png" id="imagen" alt="horca" />
+        </div>
+        <h2 class="palabraAdivinar" id="palabraAdivinar"></h2>
+        <table class="tabla-cont-hist">
+            <tr>
+                <th scope="col"><h3>Intentos</h3></th>
+                <th scope="col" ><h3>Historial de fallos</h3></th>
+            </tr>
+            <tr>
+                <td id="intentos"><h3></h3></td>
+                <td id="historial"><h3></h3></td>
+            </tr>
+        </table>
+    </main>
+    <div id="red-mask"></div>
+    <div id="green-mask"></div>
+    <script src="js/ahorcado.js"></script>
+</body>
+</html>

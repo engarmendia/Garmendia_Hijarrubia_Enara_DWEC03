@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario de validación</title>
+
+        <!-- llamada al archivo .css externo -->
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+        <script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc="
+        crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="cont-form">
+            <!-- formulario de login -->
+            <form id="formlogin" action="ahorcado.html" method="post">
+                <h2>JUEGA AL AHORCADO</h2>
+
+                <!-- Campo de Usuario -->
+                <label for="usuario">Nombre de usuario</label><br>
+                <input type="text" id="usuario" placeholder="Ingrese su nombre" name="usuario" required />
+                <br />
+
+                <!-- Campo de Contraseña -->
+                <label for="contrasena">Contraseña</label><br>
+                <input type="password" id="contrasena" placeholder="Ingrese su contraseña" name="contrasena" required />
+                <br />
+
+                <!-- Botón de Envío -->
+                <button type="submit">Entrar</button>
+                
+                <!--contenedor dónde se muestra el mensaje de que el usuario no está registrado -->
+                <div id="mensaje"></div>
+            </form>
+        </div>
+
+        <!-- llamada al archivo .js externo -->
+        <script type="text/javascript" src="js/login.js"></script>
+    </body>
+</html>

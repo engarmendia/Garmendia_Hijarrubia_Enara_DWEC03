@@ -1,0 +1,163 @@
+/* Estilos generales */
+h1 {
+    font-family: "Rubik Doodle Shadow";
+    text-align: center;
+    font-size: 200%;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14pt;
+    background-color: lightblue;
+}
+
+/* Estilos de la página index */
+.cont-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    width: 100%;
+    height: 100%; 
+}
+#formlogin {
+    background-color: #0f4c75;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 10px 10px 8px #888888;
+}
+#formlogin h2 {
+    font-size: 300%;
+    font-weight: 600;
+    color:#bbe1fa;
+    text-align: center;
+    margin-bottom: 10%;
+}
+#formlogin label {
+    font-size: 150%;
+    color: aquamarine;
+}
+#formlogin input {
+    width: 70%;
+    padding: 2% 1%;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+    font-size: 16pt;
+}
+#formlogin button {
+    margin-top: 10%;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    border-radius: 30px;
+    padding: 2%;
+    width: 60%;
+    background-color: #bbe1fa;
+    font-size: 18pt;
+    font-weight: 700;
+    border: none;
+}
+#formlogin button:hover {
+    color: white;
+    background-color: #0f4c75;
+}
+#mensaje {
+    width: 70%;
+    margin-top: 4%;
+    padding: 10px;
+    font-size: 16pt;
+    font-weight: 700;
+}
+
+/* Estilos de la página ahorcado */
+.palabraAdivinar {
+    margin: 25px auto 25px auto;
+    text-align: center;
+    color: #0f4c75;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+#imagen {
+    height: 250px;
+}
+
+/* Máscaras con transparencias verde y roja que cubriran la pantalla al ganar o perder */
+#red-mask, #green-mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4; 
+    z-index: 9999;
+    display: none; /* Inicialmente, ocultamos la capa */ 
+}
+#red-mask {
+    background-color: red;
+}
+#green-mask {
+    background-color: greenyellow;
+}
+.main-container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+#btn-empezar {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#btn-empezar:hover {
+background-color: #45a049;
+}
+#btn-empezar:active {
+background-color: #3e8e41;
+}
+#letraInput {
+    border: 5px solid darkmagenta;
+    width: 100px;
+}
+#btn-comprobar {
+    padding: 10px 20px;
+    background-color: darkmagenta;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 1px;
+    border: none;
+    cursor: pointer;
+}
+#btn-comprobar:hover {
+    background-color: rgb(159, 0, 159);
+}
+#btn-comprobar:active {
+    background-color: rgb(124, 0, 124);
+}
+.cont-input-letras {
+    display: flex;
+    margin-bottom: 2%;
+}
+.tabla-cont-hist {
+    text-align: center;
+    border-collapse: separate;
+    border-spacing: 100px 2px;
+}
+.tabla-cont-hist tr td {
+    vertical-align: middle;
+}
+#intentos {
+    font-weight: 700;
+    color: firebrick;
+}
